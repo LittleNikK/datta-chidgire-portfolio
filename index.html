@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Datta Chidgire — Sr. Video Editor & Creative Team Lead. Motion graphics, video editing, advertising, brand campaigns and Web3 creative." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Datta Chidgire — Creative Team Lead</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/DC_logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+
+<body>
+  <div class="noise"></div>
+  <svg id="football-zigzag-track" class="football-zigzag-track" aria-hidden="true"></svg>
+  <canvas id="football-canvas"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Datta Chidgire — Sr. Video Editor · Creative Team Lead">
+      <img src="assets/DC_logo.png" alt="DC Logo" class="brand-logo-img" />
+      <div class="brand-text">
+        <span class="brand-name">DATTA <span class="accent">CHIDGIRE</span></span>
+        <span class="brand-role">SR. VIDEO EDITOR <span class="role-sep">·</span> CREATIVE TEAM LEAD</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-video-wrap">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="assets/hero background.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span> CREATIVE PORTFOLIO</p>
+        <h1>Creative ideas.<br><em>Visual impact.</em></h1>
+        <p class="hero-text">
+          I lead visual storytelling across video, motion graphics, advertising,
+          brand campaigns, digital products and Web3 experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary"
+            href="https://drive.google.com/drive/folders/1nHNngh36zHOMd-C3_zI3dPUwWOm86kIo?usp=drive_link"
+            target="_blank" rel="noopener">Explore my work <span>↗</span></a>
+          <a class="btn btn-ghost" href="assets/Datta-Chidgire-Resume.pdf" target="_blank" rel="noopener">View
+            resume</a>
+        </div>
+      </div>
+
+      <div class="hero-side creative-portrait-wrap reveal delay-1">
+        <div class="creative-ring ring-a"></div>
+        <div class="creative-ring ring-b"></div>
+        <div class="creative-label label-top">CREATIVE / 01</div>
+        <div class="creative-label label-bottom">VIDEO · MOTION · DESIGN</div>
+        <div class="portrait-frame">
+          <img src="assets/datta-creative-portrait.png" alt="Datta Chidgire creative portrait" />
+          <div class="portrait-glow"></div>
+        </div>
+        <div class="creative-badge">
+          <span>DC</span>
+          <small>CREATIVE<br>LEAD</small>
+        </div>
+        <p class="hero-location">Based in<br><strong>Pune, India</strong></p>
+      </div>
+
+      <div class="hero-bottom reveal delay-2">
+        <span>Scroll to explore</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Ideas made <span>visible.</span></h2>
+        </div>
+        <p class="section-intro">A creative portfolio spanning motion, video, advertising, brand systems, events and
+          Web3.</p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="motion">Motion & Video</button>
+        <button class="filter" data-filter="brand">Brand & Campaigns</button>
+        <button class="filter" data-filter="web3">Web3</button>
+        <button class="filter" data-filter="events">Events</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-large reveal" data-category="web3 motion">
+          <div class="project-visual visual-red">
+            <span class="visual-kicker">WEB3 / BRAND</span>
+            <strong>MST<br>BLOCKCHAIN</strong>
+            <i>01</i>
+          </div>
+          <div class="project-meta">
+            <div><span>01</span>
+              <h3>MST Blockchain Ecosystem</h3>
+            </div>
+            <p>Creative leadership · Campaigns · Product visuals · Motion</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web3 brand">
+          <div class="project-visual visual-dark">
+            <span class="visual-kicker">WALLET / PRODUCT</span>
+            <strong>BRIDGEKEY</strong>
+            <i>02</i>
+          </div>
+          <div class="project-meta">
+            <div><span>02</span>
+              <h3>BridgeKey Wallet</h3>
+            </div>
+            <p>Product communication · Brand creative · Digital campaigns</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="motion">
+          <div class="project-visual visual-grid">
+            <span class="visual-kicker">MOTION / ADVERTISING</span>
+            <strong>MOTION<br>STORIES</strong>
+            <i>03</i>
+          </div>
+          <div class="project-meta">
+            <div><span>03</span>
+              <h3>Motion & Advertising</h3>
+            </div>
+            <p>After Effects · Premiere Pro · Explainers · Social video</p>
+          </div>
+        </article>
+
+        <article class="project-card project-wide reveal" data-category="events brand">
+          <div class="project-visual visual-red-dark">
+            <span class="visual-kicker">EVENTS / CAMPAIGNS</span>
+            <strong>FROM SCREEN<br>TO SPACE.</strong>
+            <i>04</i>
+          </div>
+          <div class="project-meta">
+            <div><span>04</span>
+              <h3>Event & Promotional Creative</h3>
+            </div>
+            <p>Standees · Banners · Posters · Thumbnails · Merchandise</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="brand motion">
+          <div class="project-visual visual-type">
+            <span class="visual-kicker">CLIENT WORK</span>
+            <strong>PRODUCT<br>STORIES</strong>
+            <i>05</i>
+          </div>
+          <div class="project-meta">
+            <div><span>05</span>
+              <h3>Client Production</h3>
+            </div>
+            <p>Product films · Testimonials · Documentaries · YouTube</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web3 events">
+          <div class="project-visual visual-blue">
+            <span class="visual-kicker">WEB3 / EVENTS</span>
+            <strong>COMMUNITY<br>ENERGY</strong>
+            <i>06</i>
+          </div>
+          <div class="project-meta">
+            <div><span>06</span>
+              <h3>Web3 Visual Systems</h3>
+            </div>
+            <p>Launch assets · Social creatives · Event graphics · Campaigns</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio-source reveal">
+        <span>Your full project gallery can be connected here.</span>
+        <a href="https://drive.google.com/drive/folders/1nHNngh36zHOMd-C3_zI3dPUwWOm86kIo?usp=drive_link"
+          target="_blank" rel="noopener">Open portfolio gallery ↗</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-number reveal">01</div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Creative leadership with a <span>production mindset.</span></h2>
+        <p>
+          Sr. Video Editor & Creative Team Lead with expertise in video editing,
+          motion graphics, advertising and digital content creation. I combine
+          hands-on production with creative direction to build consistent,
+          engaging visual communication.
+        </p>
+        <p>
+          My current work includes managing creative requirements, workflows,
+          reviews and final delivery while maintaining brand identity, visual
+          language, typography, colour and storytelling across campaigns.
+        </p>
+        <div class="about-stats">
+          <div><strong>05+</strong><span>Creative disciplines</span></div>
+          <div><strong>10+</strong><span>Software tools</span></div>
+          <div><strong>360°</strong><span>Creative production</span></div>
+        </div>
+      </div>
+      <div class="about-card reveal delay-1">
+        <span class="card-label">CURRENT ROLE</span>
+        <strong>Creative Team Lead</strong>
+        <span>MST Blockchain</span>
+        <small>Since 24 Dec 2025</small>
+        <div class="card-line"></div>
+        <span class="card-label">EDUCATION</span>
+        <strong>B.Sc. Animation & VFX</strong>
+        <span>Savitribai Phule Pune University</span>
+        <small>2018 — 2020</small>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2>A timeline of <span>making.</span></h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">DEC 2025 — NOW</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Creative Team Lead / Sr. Video Editor</h3>
+            <p class="company">Masterstroke Technosoft Pvt. Ltd. · MST Blockchain</p>
+            <p>Leading creative production across MST Blockchain, BridgeKey, ChainPay, Masterstroke Academy, RapidDex
+              and MST Buddy. Managing creative workflows, campaigns, brand consistency and final quality.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">APR — DEC 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Video Manager · Ads Production</h3>
+            <p class="company">EFC Limited (India)</p>
+            <p>Product videos, product shoots, social videos, documentaries, YouTube channels, motion graphics,
+              explainers, testimonials, advertising and animation for multiple clients.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">MAY 2022 — MAR 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Media & Ads Production</h3>
+            <p class="company">Interactive Kalzoom Advisors Pvt. Ltd.</p>
+            <p>Tech videos and ads, documentary-style shoots and edits, and YouTube channel handling for client brands
+              and organisations.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">EARLIER</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Motion Graphics & Advertisement Video</h3>
+            <p class="company">A2Digi Solutions · RisIAR Pvt. Ltd.</p>
+            <p>Motion graphics, advertisement videos, full-video editing and vlog production.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="skills-left reveal">
+        <p class="eyebrow">CAPABILITIES</p>
+        <h2>Tools are only useful when they <span>serve the idea.</span></h2>
+        <p>I work across the complete visual production pipeline — from concept and shoot to edit, motion, finishing and
+          campaign delivery.</p>
+      </div>
+      <div class="skills-right">
+        <div class="skill-row reveal"><span>01</span><strong>Video Editing</strong><em>Premiere Pro</em></div>
+        <div class="skill-row reveal"><span>02</span><strong>Motion Graphics</strong><em>After Effects</em></div>
+        <div class="skill-row reveal"><span>03</span><strong>Graphic Design</strong><em>Photoshop · Illustrator</em>
+        </div>
+        <div class="skill-row reveal"><span>04</span><strong>VFX & Compositing</strong><em>Nuke · Mocha</em></div>
+        <div class="skill-row reveal"><span>05</span><strong>3D Design</strong><em>Maya</em></div>
+        <div class="skill-row reveal"><span>06</span><strong>Audio / Finishing</strong><em>Audition</em></div>
+      </div>
+    </section>
+
+    <section id="clients" class="section clients-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">CLIENT EXPERIENCE</p>
+          <h2>Brands & teams I’ve <span>worked with.</span></h2>
+        </div>
+      </div>
+      <div class="brand-grid reveal">
+        <a class="brand-card" href="https://mstblockchain.com/" target="_blank" rel="noopener"
+          aria-label="MST Blockchain official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=mstblockchain.com&sz=128" alt="MST Blockchain logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>MST Blockchain</strong>
+            <small>Web3 / Layer 1</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.masterstroketechnosoft.com/" target="_blank" rel="noopener"
+          aria-label="Masterstroke Technosoft official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.masterstroketechnosoft.com&sz=128"
+              alt="Masterstroke Technosoft logo" loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Masterstroke Technosoft</strong>
+            <small>Technology</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://bridgekey.io/" target="_blank" rel="noopener"
+          aria-label="BridgeKey official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=bridgekey.io&sz=128" alt="BridgeKey logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>BridgeKey</strong>
+            <small>Web3 Wallet</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://masterstroke.academy/" target="_blank" rel="noopener"
+          aria-label="Masterstroke Academy official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=masterstroke.academy&sz=128"
+              alt="Masterstroke Academy logo" loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Masterstroke Academy</strong>
+            <small>Education / Web3</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.techmobius.com/" target="_blank" rel="noopener"
+          aria-label="TechMobius official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.techmobius.com&sz=128" alt="TechMobius logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>TechMobius</strong>
+            <small>Technology</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.k7computing.com/" target="_blank" rel="noopener"
+          aria-label="K7 Antivirus official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.k7computing.com&sz=128" alt="K7 Antivirus logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>K7 Antivirus</strong>
+            <small>Cybersecurity</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://jktech.com/" target="_blank" rel="noopener"
+          aria-label="JK Tech official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=jktech.com&sz=128" alt="JK Tech logo" loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>JK Tech</strong>
+            <small>Digital Solutions</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://waterforpeopleindia.org/" target="_blank" rel="noopener"
+          aria-label="Water For People India official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=waterforpeopleindia.org&sz=128"
+              alt="Water For People India logo" loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Water For People India</strong>
+            <small>Non-profit</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://weikfield.com/" target="_blank" rel="noopener"
+          aria-label="Weikfield official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=weikfield.com&sz=128" alt="Weikfield logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Weikfield</strong>
+            <small>Consumer Brand</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://sprintindia.work/" target="_blank" rel="noopener"
+          aria-label="Sprint India official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=sprintindia.work&sz=128" alt="Sprint India logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Sprint India</strong>
+            <small>Workspace</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.techmahindra.com/" target="_blank" rel="noopener"
+          aria-label="Tech Mahindra official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.techmahindra.com&sz=128" alt="Tech Mahindra logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Tech Mahindra</strong>
+            <small>Technology</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.coforge.com/" target="_blank" rel="noopener"
+          aria-label="Coforge official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.coforge.com&sz=128" alt="Coforge logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Coforge</strong>
+            <small>Technology</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://whitehillsinterior.in/" target="_blank" rel="noopener"
+          aria-label="Whitehills official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=whitehillsinterior.in&sz=128" alt="Whitehills logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Whitehills</strong>
+            <small>Design &amp; Build</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://ekdesign.in/" target="_blank" rel="noopener"
+          aria-label="EK Design official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=ekdesign.in&sz=128" alt="EK Design logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>EK Design</strong>
+            <small>Design</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://trythat.ai/" target="_blank" rel="noopener"
+          aria-label="TryThat official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=trythat.ai&sz=128" alt="TryThat logo" loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>TryThat</strong>
+            <small>AI / Real Estate</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.nesdata.in/" target="_blank" rel="noopener"
+          aria-label="NES Data official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.nesdata.in&sz=128" alt="NES Data logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>NES Data</strong>
+            <small>Cloud / Data</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.a2digi.com/" target="_blank" rel="noopener"
+          aria-label="A2Digi official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.a2digi.com&sz=128" alt="A2Digi logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>A2Digi</strong>
+            <small>Digital Marketing</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="http://kalzoomadvisors.com/" target="_blank" rel="noopener"
+          aria-label="Kalzoom Advisors official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=kalzoomadvisors.com&sz=128" alt="Kalzoom Advisors logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>Kalzoom Advisors</strong>
+            <small>Digital Agency</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://5fworld.com/" target="_blank" rel="noopener"
+          aria-label="5F World official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=5fworld.com&sz=128" alt="5F World logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>5F World</strong>
+            <small>Digital / AI</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+        <a class="brand-card" href="https://www.efclimited.in/" target="_blank" rel="noopener"
+          aria-label="EFC Limited official website">
+          <div class="brand-logo">
+            <img src="https://www.google.com/s2/favicons?domain=www.efclimited.in&sz=128" alt="EFC Limited logo"
+              loading="lazy" />
+          </div>
+          <div class="brand-info">
+            <strong>EFC Limited</strong>
+            <small>Workspace / Design</small>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+      </div>
+      <p class="company-note">Every brand includes its logo, full name, category and a direct link to its official
+        website.</p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-top reveal">
+        <p class="eyebrow">LET'S CREATE</p>
+        <h2>Have a story<br>worth <span>showing?</span></h2>
+      </div>
+      <div class="contact-bottom reveal">
+        <a class="email-link" href="mailto:dattachidgire23@gmail.com">dattachidgire23@gmail.com <span>↗</span></a>
+        <div class="contact-details">
+          <span>Pune, India</span>
+          <a href="tel:+919970190769">+91 99701 90769</a>
+          <a href="https://www.linkedin.com/in/datta-chidgire-aa73ba1aa/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Datta Chidgire</span>
+    <span>Sr. Video Editor · Creative Team Lead</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="assets/three.min.js"></script>
+  <script src="assets/GLTFLoader.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
