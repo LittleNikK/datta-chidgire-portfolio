@@ -65,12 +65,12 @@ button{font:inherit}
 .project-card{min-width:0}.project-card.hidden{display:none}
 .project-visual{height:370px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:28px;background:#151515;border:1px solid #262626}
 .project-large .project-visual,.project-wide .project-visual{height:470px}
-.visual-red{background:radial-gradient(circle at 75% 25%,#ef3d42 0,#78131b 28%,#151515 65%),linear-gradient(135deg,#2b090b,#111)}
-.visual-dark{background:radial-gradient(circle at 75% 20%,#343434,transparent 35%),linear-gradient(135deg,#111,#1a1a1a)}
-.visual-grid{background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:35px 35px;background-color:#121212}
-.visual-red-dark{background:radial-gradient(circle at 15% 20%,rgba(239,61,66,.65),transparent 25%),linear-gradient(130deg,#17090a,#0d0d0d 60%,#241b35)}
-.visual-type{background:linear-gradient(135deg,#222,#0e0e0e 45%,#303030)}
-.visual-blue{background:radial-gradient(circle at 75% 25%,#242c72,transparent 30%),linear-gradient(135deg,#0c0c0d,#151515)}
+.visual-red{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/MST Blockchain.png");background-position:center;background-size:cover}
+.visual-dark{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/BRIDGEKEY.png");background-position:center;background-size:cover}
+.visual-grid{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/MOTION STORIES.png");background-position:center;background-size:cover}
+.visual-red-dark{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/FROM SCREEN TO SPACE.png");background-position:center;background-size:cover}
+.visual-type{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/PRODUCT STORIES.png");background-position:center;background-size:cover}
+.visual-blue{background-image:linear-gradient(180deg,rgba(8,8,8,.08) 25%,rgba(8,8,8,.82) 100%),url("assets/COMMUNITY ENERGY.png");background-position:center;background-size:cover}
 .project-visual strong{font-family:Manrope;font-size:clamp(30px,4vw,60px);line-height:.88;letter-spacing:-.05em}
 .visual-kicker{position:absolute;top:24px;left:28px;font-size:9px;letter-spacing:.17em;color:#aaa}
 .project-visual i{position:absolute;right:27px;bottom:26px;font-style:normal;font-size:11px;color:#777}
