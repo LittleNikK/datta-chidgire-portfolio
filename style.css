@@ -1,3 +1,10 @@
+.contact-details{align-items:center;flex-wrap:wrap;gap:10px 24px;color:#c4c4c4;font-size:clamp(15px,1.3vw,18px);font-weight:600;line-height:1.5}
+.contact-details span{color:#f1f1f1;font-size:clamp(16px,1.45vw,20px);font-weight:400}
+.contact-details a{color:#d7d7d7;font-size:clamp(16px,1.45vw,20px);font-weight:400;transition:color .25s ease}
+.contact-details a:hover{color:#fff}
+.footer{color:#858585;font-size:12px}
+.footer a{color:#d0d0d0;transition:color .25s ease}
+.footer a:hover{color:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#090909;--panel:#111;--panel2:#161616;--text:#f4f2ee;--muted:#9b9b9b;--line:#282828;--red:#ef3d42;--red2:#a90f18;--blue:#242c72}
 html{scroll-behavior:smooth}
