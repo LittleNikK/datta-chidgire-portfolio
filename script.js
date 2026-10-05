@@ -153,13 +153,14 @@ function init3DFootball() {
     const portraitEl = document.querySelector('.portrait-frame') || document.querySelector('.creative-portrait-wrap');
     const heroEl = document.querySelector('.hero');
     const workEl = document.querySelector('#work');
+    const ytEl = document.querySelector('#youtube');
     const aboutEl = document.querySelector('#about');
     const expEl = document.querySelector('#experience');
     const skillsEl = document.querySelector('#skills');
     const clientsEl = document.querySelector('#clients') || document.querySelector('.clients-section');
     const contactEl = document.querySelector('#contact');
 
-    const sections = [heroEl, workEl, aboutEl, expEl, skillsEl, clientsEl, contactEl].filter(Boolean);
+    const sections = [heroEl, workEl, ytEl, aboutEl, expEl, skillsEl, clientsEl, contactEl].filter(Boolean);
 
     const winW = window.innerWidth;
     const isMobile = winW < 768;
