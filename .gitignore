@@ -1,0 +1,8 @@
+# Python scratch scripts
+*.py
+__pycache__/
+
+# OS artifacts
+.DS_Store
+asstes/DS_Store
+Thumbs.db
