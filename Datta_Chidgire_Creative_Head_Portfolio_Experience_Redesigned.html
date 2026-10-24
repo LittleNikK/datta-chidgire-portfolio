@@ -6418,39 +6418,104 @@
     }
 
     .after {
-      min-height: 220px;
-      padding: clamp(52px, 8vw, 100px) 20px !important;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      border-top: 1px solid rgba(244, 69, 88, .16);
+      position: relative !important;
+      isolation: isolate !important;
+      overflow: hidden !important;
+      min-height: clamp(380px, 42vw, 640px) !important;
+      padding: clamp(60px, 7vw, 110px) 24px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 20px !important;
+      background-color: #080709 !important;
+      background-image: 
+        linear-gradient(180deg, 
+          #080709 0%, 
+          rgba(8, 7, 9, 0.22) 12%, 
+          rgba(8, 7, 9, 0) 26%, 
+          rgba(8, 7, 9, 0) 74%, 
+          rgba(8, 7, 9, 0.35) 88%, 
+          #080709 100%),
+        url('asstes/explore%20work%20section.png') !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      border-top: 1px solid rgba(244, 69, 88, .22) !important;
+      border-bottom: 1px solid rgba(239, 60, 78, 0.22) !important;
+    }
+
+    .after::before {
+      content: "" !important;
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 1 !important;
+      pointer-events: none !important;
+      background: radial-gradient(ellipse 55% 50% at 50% 50%, rgba(5, 4, 6, 0.52) 0%, rgba(5, 4, 6, 0.2) 48%, transparent 75%) !important;
     }
 
     .all-work-kicker {
-      margin: 0;
-      color: #a69b9f;
-      font: 700 10px/1.4 var(--font-body);
-      letter-spacing: .18em !important;
-      text-align: center;
+      position: relative !important;
+      z-index: 2 !important;
+      margin: 0 !important;
+      color: #f7f1f3 !important;
+      font: 700 clamp(11px, 1.15vw, 14px)/1.5 var(--font-body) !important;
+      letter-spacing: .24em !important;
+      text-transform: uppercase !important;
+      text-align: center !important;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.98), 0 0 28px rgba(0, 0, 0, 0.92) !important;
     }
 
     .after .btn-dark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      background: #f23d4c !important;
-      color: #fff !important;
-      padding: 18px 30px !important;
+      position: relative !important;
+      z-index: 2 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 12px !important;
+      background: linear-gradient(135deg, #f23d4c 0%, #b41a27 100%) !important;
+      color: #ffffff !important;
+      font-family: "Coolvetica", "Inter", sans-serif !important;
+      font-size: clamp(14px, 1.2vw, 16px) !important;
+      font-weight: 500 !important;
+      letter-spacing: .04em !important;
+      padding: clamp(15px, 1.4vw, 19px) clamp(28px, 2.8vw, 42px) !important;
       border-radius: 999px !important;
-      box-shadow: 0 12px 40px rgba(242, 61, 76, .2);
+      border: 1px solid rgba(255, 255, 255, 0.28) !important;
+      box-shadow: 0 10px 36px rgba(242, 61, 76, 0.38), 0 0 24px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      text-decoration: none !important;
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, background 0.28s ease !important;
     }
 
     .after .btn-dark:hover {
-      background: #ff5968 !important;
-      transform: translateY(-3px);
+      background: linear-gradient(135deg, #ff5968 0%, #d82537 100%) !important;
+      transform: translateY(-3px) scale(1.025) !important;
+      box-shadow: 0 16px 48px rgba(242, 61, 76, 0.65), 0 0 36px rgba(242, 61, 76, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.65) !important;
+    }
+
+    .after .btn-dark:active {
+      transform: translateY(-1px) scale(0.99) !important;
+    }
+
+    @media (max-width: 768px) {
+      .after {
+        min-height: 320px !important;
+        padding: 56px 20px !important;
+        background-position: center center !important;
+      }
+
+      .all-work-kicker {
+        font-size: 10px !important;
+        letter-spacing: .18em !important;
+      }
+
+      .after .btn-dark {
+        padding: 14px 28px !important;
+        font-size: 14px !important;
+        gap: 10px !important;
+      }
     }
 
     /* The new Selected Work + single Explore All Work CTA replace the older duplicate showcase. */
@@ -7990,10 +8055,8 @@
 
     <section class="yt-section" id="youtubeSection" aria-labelledby="youtubeHeading">
       <video class="yt-bg-video" id="ytBgVideo" autoplay loop muted playsinline preload="auto" aria-hidden="true">
-        <source src="asstes/youtube%20bg.mp4" type="video/mp4">
-        <source src="asstes/youtube bg.mp4" type="video/mp4">
-        <source src="asstes/youtube%20bg.mov" type="video/quicktime">
-        <source src="asstes/youtube bg.mov">
+        <source src="asstes/hero%20background.mp4" type="video/mp4">
+        <source src="asstes/hero background.mp4" type="video/mp4">
       </video>
       <div class="yt-bg-overlay" aria-hidden="true"></div>
       <div class="yt-head">
