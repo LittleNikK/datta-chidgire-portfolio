@@ -6241,7 +6241,9 @@
 
       .hero-portrait-orbit {
         position: absolute !important;
-        right: 9% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
         bottom: 7% !important;
         width: 47vw !important;
         max-width: 290px !important;
@@ -6328,8 +6330,10 @@
       }
 
       .hero-portrait-orbit {
-        right: 6% !important;
-        width: 48vw !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        width: 52vw !important;
         height: 34vh !important;
         min-height: 225px !important;
         bottom: 8% !important;
@@ -7192,48 +7196,129 @@
 
     @media (max-width: 900px) {
       .yt-head {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 18px;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+        gap: 16px !important;
       }
 
       .yt-head>p {
-        width: min(100%, 560px);
+        width: min(100%, 560px) !important;
+        max-width: 100% !important;
       }
 
       .yt-feature {
-        grid-template-columns: 1fr;
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        min-height: auto !important;
+        max-width: 100% !important;
       }
 
       .yt-art {
-        min-height: 300px;
+        min-height: 240px !important;
+        height: auto !important;
+        width: 100% !important;
       }
 
       .yt-copy {
-        min-height: 260px;
+        min-height: auto !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
       }
     }
 
     @media (max-width: 760px) {
       .yt-section {
-        padding: 64px 20px 72px;
+        padding: 56px 18px 64px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
       }
 
       .yt-head {
-        margin-bottom: 26px;
+        margin-bottom: 24px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        width: 100% !important;
+      }
+
+      .yt-head h2 {
+        font-size: clamp(28px, 7.5vw, 36px) !important;
+        line-height: 1.08 !important;
+        word-break: break-word !important;
+      }
+
+      .yt-head>p {
+        font-size: clamp(13px, 3.4vw, 15px) !important;
+        line-height: 1.55 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .yt-feature {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        overflow: hidden !important;
+        border-radius: 18px !important;
+        box-sizing: border-box !important;
       }
 
       .yt-art {
-        min-height: 260px;
+        min-height: 180px !important;
+        height: clamp(180px, 48vw, 240px) !important;
+        width: 100% !important;
+        position: relative !important;
+        overflow: hidden !important;
+        border-radius: 17px 17px 0 0 !important;
+      }
+
+      .yt-banner-image {
+        border-radius: 17px 17px 0 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
       }
 
       .yt-copy {
-        min-height: 245px;
-        padding: 28px;
+        min-height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: clamp(18px, 4.5vw, 24px) clamp(16px, 4vw, 22px) !important;
+        align-items: flex-start !important;
+      }
+
+      .yt-channel-label {
+        font-size: clamp(9px, 2.6vw, 10px) !important;
+        letter-spacing: .12em !important;
+      }
+
+      .yt-copy h3 {
+        margin: 12px 0 8px !important;
+        font-size: clamp(20px, 5.5vw, 26px) !important;
+        line-height: 1.2 !important;
+        word-break: break-word !important;
+      }
+
+      .yt-copy p {
+        font-size: clamp(13px, 3.4vw, 14.5px) !important;
+        line-height: 1.6 !important;
+        max-width: 100% !important;
+        word-break: break-word !important;
+      }
+
+      .yt-open {
+        margin-top: 18px !important;
+        font-size: 12px !important;
       }
 
       .yt-art-type strong {
-        font-size: clamp(44px, 13vw, 70px);
+        font-size: clamp(44px, 13vw, 70px) !important;
       }
 
       .cz-skill-logo-grid {
